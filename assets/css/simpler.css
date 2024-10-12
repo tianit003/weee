@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container {
+  max-width: 900px;
+  height: 80vh;
+  background-color: black;
+  margin: 40px auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.grid-container > div {
+  background-color: white;
+}
+.grid-container > div:last-child {
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
